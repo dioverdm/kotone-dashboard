@@ -23,7 +23,7 @@ export const Status = () => {
 
     const fetchApiStatus = async () => {
       try {
-        const response = await fetch("https://api.kotone.tech");
+        const response = await fetch("http://d01.flexynode.com:26659/");
         if (response.ok) {
           setApiStatus("Online");
         } else {
@@ -37,7 +37,7 @@ export const Status = () => {
 
     const fetchWebStatus = async () => {
       try {
-        const response = await fetch("https://www.kotone.tech");
+        const response = await fetch("http://d01.flexynode.com:26659/");
         if (response.ok) {
           setWebStatus("Online");
         } else {
