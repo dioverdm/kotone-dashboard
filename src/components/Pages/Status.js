@@ -9,7 +9,7 @@ export const Status = () => {
   useEffect(() => {
     const fetchBotStatus = async () => {
       try {
-        const response = await fetch("https://api.kotone.tech");
+        const response = await fetch("http://d01.flexynode.com:26659/");
         if (response.ok) {
           setBotStatus("Online");
         } else {
